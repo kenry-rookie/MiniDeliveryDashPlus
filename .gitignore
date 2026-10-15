@@ -1,0 +1,42 @@
+cat > .gitignore << 'EOF'
+# Archivos de macOS
+.DS_Store
+*.swp
+*.swo
+
+# Archivos compilados y ejecutables
+*.exe
+*.dll
+*.so
+*.dylib
+build/
+cmake-build-*/
+
+# Archivos grandes de juego
+*.zip
+*.7z
+*.rar
+*.bin
+*.app/
+MiniDeliveryDash.app/
+MiniDeliveryDash-Mac.zip
+MiniDeliveryDash-mac/
+
+# Logs y temporales
+logs/
+*.log
+debug_log.txt
+game_err.txt
+game_out.txt
+
+# Archivos de guardado local
+shop_save.txt
+
+# IDE
+.vscode/
+.idea/
+*.iml
+EOF
+
+# Agregar .gitignore
+git add .gitignore
